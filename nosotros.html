@@ -71,7 +71,7 @@
                                  <li>
                                     <a href="https://www.facebook.com/Villasmediterraneas/"><span class="mn-soc-link tooltip-bot" title="Facebook"><i class="fa fa-facebook"></i></span></a>
                                     <a href="https://www.instagram.com/villasmediterraneasleon/"><span class="mn-soc-link tooltip-bot" title="Instagram"><i class="fa fa-instagram"></i></span></a>
-                                    <a href="https://wa.link/wgv8rt"><span class="mn-soc-link tooltip-bot" title="Whastapp"><i class="fa fa-whatsapp"></i></span></a>
+                                    <a href="https://wa.link/b9sp1g"><span class="mn-soc-link tooltip-bot" title="Whastapp"><i class="fa fa-whatsapp"></i></span></a>
                                 </li>
                                 
                             </ul>
@@ -199,7 +199,7 @@
                                     </div>
                                     
                                     <div class="mt-30">
-                                        <a href="https://wa.link/wgv8rt" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Reservar</a>
+                                        <a href="https://wa.link/b9sp1g" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Reservar</a>
                                     </div>
                                     
                                 </div>
@@ -247,7 +247,7 @@ VISIÓN
 Ser una empresa líder en su ramo, con personal altamente calificado que ofrece un servicio de excelencia, competitivo y satisfactorio a través de un trato amable y personal a todos sus clientes nacionales e internacionales.
                                     </p>
                                     <div class="align-center">
-                                        <a href="https://wa.link/wgv8rt" class="btn btn-mod btn-medium btn-round">Reservar</a>
+                                        <a href="https://wa.link/b9sp1g" class="btn btn-mod btn-medium btn-round">Reservar</a>
                                     </div>
                                 </div>
                             </div>
@@ -337,7 +337,7 @@ Ser una empresa líder en su ramo, con personal altamente calificado que ofrece 
                     <div class="align-center">
                         <h3 class="banner-heading font-alt mb-40">Disfruta Leon Gto</h3>
                         <div class="local-scroll">
-                            <a href="https://wa.link/wgv8rt" class="btn btn-mod btn-w btn-medium btn-round">Reservaciones</a>
+                            <a href="https://wa.link/b9sp1g" class="btn btn-mod btn-w btn-medium btn-round">Reservaciones</a>
                         </div>
                     </div>
                     
@@ -433,7 +433,7 @@ Ser una empresa líder en su ramo, con personal altamente calificado que ofrece 
                 <!-- Social Links -->
                 <div class="footer-social-links mb-30">
                     <a href="https://www.facebook.com/Villasmediterraneas/" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a href="https://wa.link/wgv8rt" title="Whastapp" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                    <a href="https://wa.link/b9sp1g" title="Whastapp" target="_blank"><i class="fa fa-whatsapp"></i></a>
                     <a href="https://www.instagram.com/villasmediterraneasleon/" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
                     
                 </div>
@@ -468,10 +468,31 @@ Ser una empresa líder en su ramo, con personal altamente calificado que ofrece 
         <!-- End Foter -->
         
         
-        <!-- Buy Button -->
-        <a href="https://wa.link/wgv8rt" target="_blank" class="buy-button"><i class="fa fa-whatsapp" aria-hidden="true"></i> <span>Reserva</span></a>
-        <!-- End Buy Button -->
-    
+       <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v8.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+                    <center>
+      <div class="fb-customerchat" 
+        attribution=setup_tool
+        page_id="894742007292279"
+  theme_color="#a695c7">
+      </div>
     
     </div>
     <!-- End Page Wrap -->
